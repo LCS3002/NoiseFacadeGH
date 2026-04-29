@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>NoiseFacadeGH</AssemblyName>
+    <RootNamespace>NoiseFacadeGH</RootNamespace>
+    <OutputType>Library</OutputType>
+    <LangVersion>7.3</LangVersion>
+    <Optimize>true</Optimize>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- exclude sub-projects so their generated files aren't picked up -->
+    <Compile Remove="MathTest\**\*" />
+    <Compile Remove="GenerateIcon\**\*" />
+    <EmbeddedResource Remove="MathTest\**\*" />
+    <EmbeddedResource Remove="GenerateIcon\**\*" />
+    <None Remove="MathTest\**\*" />
+    <None Remove="GenerateIcon\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NoiseFacade_24.png" />
+    <EmbeddedResource Include="NoiseFacade_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RhinoCommon">
+      <HintPath>C:\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>C:\Program Files\Rhino 8\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <HintPath>C:\Program Files\Rhino 8\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

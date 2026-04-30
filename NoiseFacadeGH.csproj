@@ -27,6 +27,9 @@
     <EmbeddedResource Include="BatInterior_24.png" />
     <EmbeddedResource Include="BatContours_24.png" />
     <EmbeddedResource Include="BatLegend_24.png" />
+    <EmbeddedResource Include="MantaWind_24.png" />
+    <EmbeddedResource Include="MantaSun_24.png" />
+    <EmbeddedResource Include="MantaPressure_24.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="RhinoCommon">

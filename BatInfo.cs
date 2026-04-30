@@ -25,15 +25,19 @@ namespace BatGH
         }
 
         static Bitmap _bat24, _bat48, _src24, _msh24, _nse24, _int24, _con24, _leg24;
+        static Bitmap _mwnd24, _msun24, _mpre24;
 
-        public static Bitmap Bat24      => _bat24 ?? (_bat24 = Load("Bat_24.png"));
-        public static Bitmap Bat48      => _bat48 ?? (_bat48 = Load("Bat_48.png"));
-        public static Bitmap Source24   => _src24 ?? (_src24 = Load("BatSource_24.png"));
-        public static Bitmap Mesh24     => _msh24 ?? (_msh24 = Load("BatMesh_24.png"));
-        public static Bitmap Noise24    => _nse24 ?? (_nse24 = Load("BatNoise_24.png"));
-        public static Bitmap Interior24 => _int24 ?? (_int24 = Load("BatInterior_24.png"));
-        public static Bitmap Contours24 => _con24 ?? (_con24 = Load("BatContours_24.png"));
-        public static Bitmap Legend24   => _leg24 ?? (_leg24 = Load("BatLegend_24.png"));
+        public static Bitmap Bat24        => _bat24  ?? (_bat24  = Load("Bat_24.png"));
+        public static Bitmap Bat48        => _bat48  ?? (_bat48  = Load("Bat_48.png"));
+        public static Bitmap Source24     => _src24  ?? (_src24  = Load("BatSource_24.png"));
+        public static Bitmap Mesh24       => _msh24  ?? (_msh24  = Load("BatMesh_24.png"));
+        public static Bitmap Noise24      => _nse24  ?? (_nse24  = Load("BatNoise_24.png"));
+        public static Bitmap Interior24   => _int24  ?? (_int24  = Load("BatInterior_24.png"));
+        public static Bitmap Contours24   => _con24  ?? (_con24  = Load("BatContours_24.png"));
+        public static Bitmap Legend24     => _leg24  ?? (_leg24  = Load("BatLegend_24.png"));
+        public static Bitmap MantaWind24  => _mwnd24 ?? (_mwnd24 = Load("MantaWind_24.png"));
+        public static Bitmap MantaSun24   => _msun24 ?? (_msun24 = Load("MantaSun_24.png"));
+        public static Bitmap MantaPre24   => _mpre24 ?? (_mpre24 = Load("MantaPressure_24.png"));
     }
 
     public class BatAssemblyInfo : GH_AssemblyInfo
